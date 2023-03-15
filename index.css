@@ -127,6 +127,7 @@ header .header-right .hamburger div {
 
     .header-center .title {
         z-index: -2;
+        font-size: 20px;
     }
 
     header .header-right .hamburger {
