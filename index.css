@@ -94,12 +94,39 @@ header .header-right .hamburger div {
 .grid {
     margin-top: 90px;
     display: grid;
-    grid-template-columns: repeat(1fr, 2fr);
+    grid-template-columns:  1fr/3fr;
+}
+
+.footer-grid {
+    height: 45vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns:  6fr 3fr;
+}
+
+.footer-grid .info {
+    padding: 50px;
+}
+
+.footer-grid .info p span{
+    line-height: 1.7rem;
+}
+
+.footer-grid .contact {
+    padding: 50px;
+}
+
+.footer-grid .info p span{
+    line-height: 1.7rem;
 }
 
 @media only screen and (max-width: 1000px) {
     header {
         padding: 0 20px;
+    }
+
+    .header-center .title {
+        z-index: -2;
     }
 
     header .header-right .hamburger {
@@ -113,8 +140,8 @@ header .header-right .hamburger div {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #b2aeae;
-        opacity: 50%;
+        background-color: #ffffff;
+        opacity: 40%;
         padding: 30px;
         transition: 0.3s;
         text-align: center;
@@ -131,10 +158,31 @@ header .header-right .hamburger div {
 
     nav ul li a {
         opacity: 100%;
-        color: #ffffff;
+        color: #000000;
     }
 
     nav ul li a:hover {
-        color: #000000;
+        color: #856a6a;
+    }
+
+    .footer-grid {
+        height: 123vh;
+        display: block;
+    }
+    
+    .footer-grid .info {
+        padding: 50px;
+    }
+    
+    .footer-grid .info p {
+        font-size: 11px;
+    }
+    
+    .footer-grid .contact {
+        padding: 50px;
+    }
+    
+    .footer-grid .info p {
+        font-size: 1rem;
     }
 }
