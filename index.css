@@ -127,7 +127,11 @@ header .header-right .hamburger div {
 
     .header-center .title {
         z-index: -2;
-        font-size: 20px;
+        padding: 10px;
+    }
+
+    .header-center .title h1 span{
+         font-size: 20px;
     }
 
     header .header-right .hamburger {
