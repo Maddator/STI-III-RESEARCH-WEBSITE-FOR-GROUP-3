@@ -171,7 +171,7 @@ header .header-right .hamburger div {
     }
 
     .footer-grid {
-        height: 132vh;
+        height: 160vh;
         display: block;
     }
     
@@ -188,6 +188,6 @@ header .header-right .hamburger div {
     }
     
     .footer-grid .info p {
-        font-size: 1rem;
+        font-size: 11px;
     }
 }
