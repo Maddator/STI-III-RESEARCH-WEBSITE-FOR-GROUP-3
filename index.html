@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar using HTML, CSS and Javascript</title>
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidden Gems Of Baguio</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="header-left">
-                <div class="logo">
-                    <img src="./logo.png" alt="">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="header-right">
-                <div class="hamburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </header>
-
-        <div class="header-center">
-            <div class="title">
-                <h1><span>Hidden Gems Of Baguio</span></h1>
-            </div>
-        </div>
-
-        <!-- todo Grid images -->
-        <div class="grid">
-            <img src="./Igorot-Stone-Kingdom.png" alt="stone">
-            <img src="./diplomathotel.png" alt="stone">
-            <img src="./Boating-Burnham-Park.png" alt="stone">
-            <div class="footer-grid">
-                <div class="info">
-                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quae obcaecati dolorem deserunt, aliquid sunt corrupti dolores id eaque, itaque quod ab nulla. Aliquid eius, nobis perferendis sunt distinctio, ullam nesciunt illo soluta pariatur quod est ratione. Earum commodi unde natus iusto atque nemo necessitatibus ex, mollitia ab impedit quos, voluptas doloremque delectus ipsam iure in provident quibusdam quidem dolorem maiores voluptatum odit. Aspernatur eos laudantium sequi! Aut vitae quod, hic accusamus voluptatem sed earum blanditiis ab dolorem itaque quia maiores eos ut nihil, asperiores deserunt atque vel eveniet ex dolorum quisquam numquam laudantium consectetur exercitationem? Repellendus nihil sint explicabo.</span></p>
-                </div>
-                <div class="contact">
-                    <p><span>Contact Us<br>padrenisalvimo@gmail.com<br>+63 9531930241</span></p>
-                </div>
-            </div>
-        </div>
-        
+  <div class="banner">
+    <div class="navigation">
+      <img src="https://github.com/Maddator/STI-III-RESEARCH-WEBSITE-FOR-GROUP-3/blob/master/logo.png?raw=true" alt="logo" class="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
-        
-    <script>
-        hamburger = document.querySelector(".hamburger");
-        nav = document.querySelector("nav");
-        hamburger.onclick = function() {
-            nav.classList.toggle("active");
-        }
-    </script>
-</body>
+
+    <div class="content">
+      <h1>Hidden Gems of baguio</h1>
+      <!-- Researchers info -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+    </div>
+  </div>
+
+  <div class="grid-imagescontents">
+    <!-- Igorot stonekingdom -->
+    <div class="igorot-stonekingdom">
+      <img src="https://github.com/Maddator/STI-III-RESEARCH-WEBSITE-FOR-GROUP-3/blob/master/Igorot-Stone-Kingdom.png?raw=true" alt="Igorot stonekingdom">
+      <div class="content">
+
+      </div>
+    </div>
+
+    <!-- Diplomat Hotel -->
+    <div class="diplomat-hotel">
+      <img src="https://github.com/Maddator/STI-III-RESEARCH-WEBSITE-FOR-GROUP-3/blob/master/diplomathotel.png?raw=true" alt="Diplomat Hotel">
+      <div class="content">
+
+      </div>
+    </div>
+
+    <!-- Burnham Park -->
+    <div class="burnham-park">
+      <img src="https://github.com/Maddator/STI-III-RESEARCH-WEBSITE-FOR-GROUP-3/blob/master/Boating-Burnham-Park.png?raw=true" alt="Burnham Park">
+      <div class="content">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-footer">
+    <div class="info">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, eligendi commodi quibusdam aliquid ut quasi non impedit quo nam illum, corporis rem aut voluptatum blanditiis, et similique nulla. Iure laborum nihil doloribus. Sequi, quibusdam! Delectus eaque accusantium iusto ex magni iste numquam voluptatem quam incidunt a itaque, eligendi rerum sequi?</p>
+    </div>
+    <div class="contact">
+      <p>Contact Us <br>Loremipsum@email.com<br>+63 92323567894</p>
+    </div>
+  </div>
+
 </html>
