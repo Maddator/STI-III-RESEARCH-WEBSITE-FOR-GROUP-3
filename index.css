@@ -1,193 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body {
-    background: url(baguio.png) no-repeat fixed center;
-    background-size: cover;
-    max-height: 100vh;
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://github.com/Maddator/STI-III-RESEARCH-WEBSITE-FOR-GROUP-3/blob/master/baguio.png?raw=true);
+  background-size: cover;
+  background-position: center;
 }
 
-img {
-    width: 100%;
+.navigation {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-header {
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 55px;
+.navigation .logo {
+  width: 120px;
+  cursor: pointer;
 }
 
-header .header-left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 50px;
+.navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
 }
 
-header .header-left .logo {
-    width: 75px;
+.navigation ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
 }
 
-header .header-left nav {
-    margin-left: 1000px;
+.navigation ul li a::hover {
+  opacity: 30%;
+  color: grey;
 }
 
-header .header-left nav ul {
-    display: flex;
+.navigation .hamburger {
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
 }
 
-.header-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
+.navigation .hamburger div {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff;
 }
 
-.header-center .title h1 span{
-    text-transform: uppercase;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-weight: bold;
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
 }
 
-nav ul li a {
-    display: block;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: 0.2s;
-    text-transform: uppercase;
+.content h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 80px;
+  text-transform: uppercase;
 }
 
-nav ul li a:hover {
-    color: #b2aeae;
+.content p {
+  margin: 20px 100px;
+  font-size: 1rem;
 }
 
-header .header-right {
-    display: flex;
-    align-items: center;
+.grid-imagescontents {
+  display: grid;
+  grid-template-columns: 1fr/3fr;
 }
 
-header .header-right .hamburger {
-    margin-left: 20px;
-    cursor: pointer;
-    display: none;
+.grid-imagescontents img {
+  width: 100%;
 }
 
-header .header-right .hamburger div {
-    width: 30px;
-    height: 2px;
-    margin: 6px 0;
-    background: #fff;
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 25px;
+  height: 50%;
 }
 
-.grid {
-    margin-top: 90px;
-    display: grid;
-    grid-template-columns:  1fr/3fr;
+.grid-footer .info {
 }
 
-.footer-grid {
-    height: 45vh;
-    background-color: white;
-    display: grid;
-    grid-template-columns:  6fr 3fr;
-}
-
-.footer-grid .info {
-    padding: 50px;
-}
-
-.footer-grid .info p span{
-    line-height: 1.7rem;
-}
-
-.footer-grid .contact {
-    padding: 50px;
-}
-
-.footer-grid .info p span{
-    line-height: 1.7rem;
+.grid-footer .contact {
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1000px) {
-    header {
-        padding: 0 20px;
-    }
+  .navigation ul {
+    display: none;
+  }
 
-    .header-center .title {
-        z-index: -2;
-        padding: 10px;
-    }
-
-    .header-center .title h1 span{
-         font-size: 20px;
-    }
-
-    header .header-right .hamburger {
-        display: block;
-    }
-
-    header .header-left nav {
-        margin: 0;
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #ffffff;
-        opacity: 40%;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-        z-index: -1;
-    }
-
-    header .header-left nav.active {
-        top: 0px;
-    }
-    
-    header .header-left nav ul {
-        display: block;
-    }
-
-    nav ul li a {
-        opacity: 100%;
-        color: #000000;
-    }
-
-    nav ul li a:hover {
-        color: #856a6a;
-    }
-
-    .footer-grid {
-        height: 160vh;
-        display: block;
-    }
-    
-    .footer-grid .info {
-        padding: 50px;
-    }
-    
-    .footer-grid .info p {
-        font-size: 11px;
-    }
-    
-    .footer-grid .contact {
-        padding: 50px;
-    }
-    
-    .footer-grid .info p {
-        font-size: 11px;
-    }
+  .navigation .hamburger {
+    display: inline-block;
+  }
 }
