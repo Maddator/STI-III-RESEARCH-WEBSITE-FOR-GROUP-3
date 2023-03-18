@@ -112,4 +112,13 @@
   .navigation .hamburger {
     display: inline-block;
   }
+
+  .grid-footer {
+    display: block;
+  }
+
+  .grid-footer .contact {
+    margin-top: 50px;
+    display: block;
+  }
 }
