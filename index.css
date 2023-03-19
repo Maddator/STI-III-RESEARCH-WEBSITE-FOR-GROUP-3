@@ -10,7 +10,7 @@
 .banner {
   width: 100%;
   height: 100vh;
-  background-image: url(https://github.com/Maddator/STI-III-RESEARCH-WEBSITE-FOR-GROUP-3/blob/master/baguio.png?raw=true);
+  background-image: url(./baguio.png);
   background-size: cover;
   background-position: center;
 }
@@ -82,7 +82,7 @@
 
 .grid-imagescontents {
   display: grid;
-  grid-template-columns: 1fr/3fr;
+  grid-template-columns: 1fr;
 }
 
 .grid-imagescontents img {
@@ -96,8 +96,8 @@
   height: 50%;
 }
 
-.grid-footer .info {
-}
+/* .grid-footer .info {
+} */
 
 .grid-footer .contact {
   display: flex;
@@ -107,6 +107,18 @@
 @media only screen and (max-width: 1000px) {
   .navigation ul {
     display: none;
+  }
+
+  .navigation .logo {
+    width: 95px;
+  }
+
+  .content h1 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 0.5rem;
   }
 
   .navigation .hamburger {
